@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Elvic Cartoons</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="Elvic-Face-Normal.png">
+    </head>
+    
+    <script>
+        window.addEventListener("load", function() {
+           let form = document.querySelector("form");
+           form.addEventListener("submit", function(event) {
+                let userRating = document.querySelector("input[name=firstRating]:checked");
+                if (userRating.value === "1") {
+                    alert("what did I do to hurt you?");
+                } else if (userRating.value === "2"){
+                    alert("it's okay, not everyone has taste ¯\_(ツ)_/¯");
+                } else if (userRating.value === "3"){
+                    alert("i'm not mid, you're mid");
+                } else if (userRating.value === "4"){
+                    alert("Not too bad, eh? thank you :)");
+                } else if (userRating.value === "5"){
+                    alert("Fantastic! I'm so glad you liked the cartoon!!! :D");
+                    form.action = "second-animation.html";
+                } else if (userRating.value === ""){
+                    alert("Please give the video a rating...");
+                    event.preventDefault();
+                };
+           });
+        });
+     </script>
+
+    <body>
+        <div class="page-container">
+            <div class="content-wrap">
+            <!-- margin images  --> 
+            <img id="margin-image" src="Green-Stripe-Margin-Background-01.png" alt="Stripes" style="float:left"></img>
+            <img id="margin-image" src="Green-Stripe-Margin-Background-01.png" alt="Stripes" style="float:right"></img>
+            <h1 class="header">Elvic Cartoons</h1>
+            <p>
+                Hello, everyone! Welcome to my YouTube portfolio :D<br><br>
+                Just to start you off, here is one of my favorite animations I've made:<br><br>
+                ============<br>
+                ===========<br>
+                ==========<br>
+                =========<br>
+                ========<br>
+                ===================<br>
+                ================<br>
+                =============<br>
+                ===========<br>
+                =========<br>
+                =======<br>
+                ====<br>
+                =<br><br>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zWOdewG9w4w" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                </iframe><br><br>
+
+                What did you think? If you could, please rate the cartoon you just watched :)
+                <form>
+                    Please rate from 1 to 5 :D<br>
+                    <label>1: <input type='radio' name="firstRating" value='1'></label>
+                    <label>2: <input type='radio' name="firstRating" value='2'></label>
+                    <label>3: <input type='radio' name="firstRating" value='3'></label>
+                    <label>4: <input type='radio' name="firstRating" value='4'></label>
+                    <label>5: <input type='radio' name="firstRating" value='5'></label><br>
+                    <button>Send Rating</button>
+                </form>
+                <br>Click here for more animations!<br>
+                <a href="library.html">
+                    <button>More Cartoons!</button>
+                </a>
+            </p>
+        </div>
+        <!--
+        <div class="footer">Copyright: ur mom lol</div>
+        -->
+        <div class="footer">Copyright 2023</div>
+        </div>
+    </body>
+</html>
