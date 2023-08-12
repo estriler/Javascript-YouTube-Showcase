@@ -10,12 +10,16 @@
     font-size: 75px;
 }
 
+h1 {
+    text-align: center;
+    color:forestgreen;
+    font-family: "elvicStudiosFont";
+    font-size: 40px;
+}
+
 .margin-image {
-    position:fixed;
-    background:fixed;
-    width: auto;
-    height: auto;
-    text-indent: -9999px;
+    position: -webkit-sticky;
+    position:sticky;
 }
 
 body {
@@ -51,11 +55,16 @@ button {
 
 .page-container {
     position: relative;
-    min-height: 0px;
+    min-height: 100vh;
+}
+
+.footer-container {
+    position: relative;
+    min-height: 20vh;
 }
 
 .content-wrap {
-    padding-bottom: 300px;
+    padding-bottom: 2.5rem;
 }
 
 .footer {
@@ -64,6 +73,8 @@ button {
     width: 100%;
     text-align: bottom;
     color:brown;
+    display: flex;
+    justify-content: space-evenly;
     /*
     display:flex;
     align-items: flex-end;
@@ -71,3 +82,80 @@ button {
     text-align: center;
     */
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.thumbnail {
+    opacity: 1.0;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.thumbnail:hover {
+    opacity: 0.6;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}
+
+​.wrapper{
+    padding:0px;
+    width:820px;
+    height:auto;
+    margin:auto;
+    overflow:hidden;
+}
+
+.image-container{
+    float:left;
+    width:392px;
+    height:250px;
+    position:relative;
+    margin:10px;
+    cursor:pointer;
+}
+
+.image-container img{
+    width:392px;
+    height:250px; 
+    position:absolute;
+}
+
+.image-caption {
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.7);
+    position:absolute; 
+    opacity:0; 
+    transition:all 300ms ease-in-out;
+   -webkit-transition:all 300ms ease-in-out;
+   -moz-transition:all 300ms ease-in-out;
+   -o-transition:all 300ms ease-in-out;
+   -ms-transition:all 300ms ease-in-out;
+}
+
+.image-caption h1{
+    padding:100px 0px 5px 0px;
+    text-align:center;
+    font-size:35px;
+    color:white;
+}
+
+
+.image-container:hover .image-caption{
+    opacity:1;
+}
+
