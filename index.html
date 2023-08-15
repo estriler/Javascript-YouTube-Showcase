@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Elvic Cartoons</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="Elvic-Face-Normal.png">
     </head>
@@ -30,9 +31,35 @@
            });
         });
      </script>
-     <!-- adding this to test repo :D -->
 
     <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" >
+            <div class="container-fluid" >
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="library.html">Animations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCWDV63envlo4Bu6oRr_FjkA">YouTube</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitch.tv/elviccartoons">Twitch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.patreon.com/ElvicCartoons">Patreon</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class="page-container">
             <div class="content-wrap">
             <!-- margin images  --> 
@@ -63,14 +90,15 @@
                         allowfullscreen>
                 </iframe><br><br>
 
-                What did you think? If you could, please rate the cartoon you just watched :)
-                <form>
+               
+                <form class="rating-form">
+                    What did you think? If you could, please rate the cartoon you just watched.<br>
                     Please rate from 1 to 5 :D<br>
-                    <label>1: <input type='radio' name="firstRating" value='1'></label>
-                    <label>2: <input type='radio' name="firstRating" value='2'></label>
-                    <label>3: <input type='radio' name="firstRating" value='3'></label>
-                    <label>4: <input type='radio' name="firstRating" value='4'></label>
-                    <label>5: <input type='radio' name="firstRating" value='5'></label><br>
+                    <label>1:<input type='radio' name="firstRating" value='1'></label>
+                    <label>2:<input type='radio' name="firstRating" value='2'></label>
+                    <label>3:<input type='radio' name="firstRating" value='3'></label>
+                    <label>4:<input type='radio' name="firstRating" value='4'></label>
+                    <label>5:<input type='radio' name="firstRating" value='5'></label><br>
                     <button>Send Rating</button>
                 </form>
                 <br>Click here for more animations!<br>

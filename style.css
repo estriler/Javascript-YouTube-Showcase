@@ -26,24 +26,28 @@ body {
     position: relative;
     text-align: center;
     background-color:rgb(239, 255, 240);
-    font-family: "Arial" , "Garamond";
+    /* font-family: "Arial" , "Garamond"; */
     /* fixes margin squish */
     min-width: 1200px;
 }
 
-form {
+.rating-form {
     color:limegreen;
     border-style: double;
     border-radius: 25px;
     border-color: limegreen;
     margin-left: 400px;
     margin-right: 400px;
-    padding: 25px;
+    padding: 15px;
     flex-wrap: nowrap;
 }
 
 input[type="radio"]{
-    margin: 10px
+    margin-left: 5px;
+    margin-right: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
 }
 
 button {
@@ -157,5 +161,10 @@ button {
 
 .image-container:hover .image-caption{
     opacity:1;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
 }
 

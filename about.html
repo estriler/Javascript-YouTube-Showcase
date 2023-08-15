@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Elvic Cartoons</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="Elvic-Face-Normal.png">
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        window.addEventListener("load", function() {
+           let form = document.querySelector("form");
+           form.addEventListener("submit", function(event) {
+                let userRating = document.querySelector("input[name=firstRating]:checked");
+                if (userRating.value === "1") {
+                    alert("Here's a video you might like better 🙃");
+                    form.action = "https://youtu.be/3YltYCrPZos";
+                } else if (userRating.value === "2"){
+                    alert("I think I found you on the internet 😮");
+                    form.action = "https://en.wikipedia.org/wiki/Clown";
+                } else if (userRating.value === "3"){
+                    alert("Yeah, this honestly is just kinda okay. It was senior year and I was working on like 3 other animations at the time so I couldn't crank out masterpieces left and right, ya know? Here's a pic of a cute cat for your honesty:");
+                    form.action = "cute-cat.jpg";
+                } else if (userRating.value === "4"){
+                    alert("Thank you! I was going for something similar to the following video:");
+                    form.action = "https://youtu.be/dNJdJIwCF_Y";
+                } else if (userRating.value === "5"){
+                    alert("Fantastic! I'm so glad you liked the cartoon!!! :D");
+                    form.action = "second-animation.html";
+                } else if (userRating.value === ""){
+                    alert("Please give the video a rating...");
+                    event.preventDefault();
+                };
+           });
+        });
+     </script>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="library.html">More Animations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCWDV63envlo4Bu6oRr_FjkA">YouTube</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.twitch.tv/elviccartoons">Twitch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.patreon.com/ElvicCartoons">Patreon</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-sm-2" type="search" placeholder="Search">
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <div class="page-container">
+            <div class="content-wrap">
+                <img id="margin-image" src="Green-Stripe-Margin-Background-01.png" alt="Stripes" style="float:left"></img>
+                <img id="margin-image" src="Green-Stripe-Margin-Background-01.png" alt="Stripes" style="float:right"></img>
+
+                So, you liked that last cartoon a lot, eh? He're something else I made a while back when I was in college. Please enjoy! <br><br>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HwnDX_iR_E8" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+
+               
+                <form class="rating-form">
+                    I had a lot of fun with this one. On a scale from 1 to 5, what did you think?<br>
+                    Please rate from 1 to 5 😘<br>
+                    <label>1: <input type='radio' name="firstRating" value='1'></label>
+                    <label>2: <input type='radio' name="firstRating" value='2'></label>
+                    <label>3: <input type='radio' name="firstRating" value='3'></label>
+                    <label>4: <input type='radio' name="firstRating" value='4'></label>
+                    <label>5: <input type='radio' name="firstRating" value='5'></label><br>
+                    <button>Send Rating</button>
+                </form>
+
+                <br>Click here for more animations!<br>
+                <a href="library.html">
+                    <button>More Cartoons!</button>
+                </a>
+                <a href="index.html">
+                    <button>Back to Home</button>
+                </a>
+            </div>
+            <div class="footer">Copyright: ur mom lol</div>
+        </div>
+    </body>
+</html>
