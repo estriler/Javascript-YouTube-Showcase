@@ -42,8 +42,34 @@ function backToTop() {
              alert("Thank you! I was going for something similar to the following video:");
              form.action = "https://youtu.be/dNJdJIwCF_Y";
          } else if (userRating.value === "5"){
-             alert("Fantastic! I'm so glad you liked the cartoon!!! :D");
-             form.action = "second-animation.html";
+             alert("Hot-diggity!! Thank you!!! I'm so glad you liked it!! :D");
+             form.action = "third-animation.html";
+         } else if (userRating.value === ""){
+             alert("Please give the video a rating...");
+             event.preventDefault();
+         };
+    });
+ });
+
+ window.addEventListener("load", function() {
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+         let userRating = document.querySelector("input[name=thirdRating]:checked");
+         if (userRating.value === "1") {
+             alert("Bingus");
+             form.action = "index.html";
+         } else if (userRating.value === "2"){
+             alert("To be honest, I refuse to watch this video myself again. The cringe is WAY too powerful. Do yourself a favor and clense your pallet with some lofi");
+             form.action = "https://youtu.be/ZcJBCbRLN-8";
+         } else if (userRating.value === "3"){
+             alert("I'm running out of fun ideas for alerts, so I'm just going to send you to the About page");
+             form.action = "about.html";
+         } else if (userRating.value === "4"){
+             alert("That's very kind of you, but we both know you're lying :P Here's some other old stuff I made!");
+             form.action = "https://youtu.be/DJgfp2zWE2Q";
+         } else if (userRating.value === "5"){
+             alert("Man, according to you, I can do no wrong. Want to support me on Patreon?");
+             form.action = "https://www.patreon.com/ElvicCartoons";
          } else if (userRating.value === ""){
              alert("Please give the video a rating...");
              event.preventDefault();
