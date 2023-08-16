@@ -168,3 +168,7 @@ nav ul li {
     text-align: center;
 }
 
+.profile-picture {
+    border-radius: 30px;
+}
+

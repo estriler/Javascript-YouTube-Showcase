@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Elvic Cartoons</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="Elvic-Face-Normal.png">
         <meta charset="UTF-8">
@@ -17,7 +18,7 @@
               <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
@@ -49,8 +50,8 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/HwnDX_iR_E8" title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
 
-                I had a lot of fun with this one. On a scale from 1 to 5, what did you think?<br>
-                <form>
+                <form class="rating-form">
+                    I had a lot of fun with this one. On a scale from 1 to 5, what did you think?<br>
                     Please rate from 1 to 5 😘<br>
                     <label>1: <input type='radio' name="secondRating" value='1'></label>
                     <label>2: <input type='radio' name="secondRating" value='2'></label>
@@ -60,15 +61,11 @@
                     <button>Send Rating</button>
                 </form>
 
-                <br>Click here for more animations!<br>
-                <a href="library.html">
-                    <button>More Cartoons!</button>
-                </a>
-                <a href="index.html">
-                    <button>Back to Home</button>
-                </a>
+                <div class="button-container">
+                    <button onclick="backToTop()">Go to top</button>
+                  </div>
             </div>
-            <div class="footer">Copyright: ur mom lol</div>
+            <div class="footer">Copyright 2023</div>
         </div>
     </body>
 </html>
