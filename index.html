@@ -8,32 +8,10 @@
         <link rel="icon" href="Elvic-Face-Normal.png">
     </head>
     
-    <script>
-        window.addEventListener("load", function() {
-           let form = document.querySelector("form");
-           form.addEventListener("submit", function(event) {
-                let userRating = document.querySelector("input[name=firstRating]:checked");
-                if (userRating.value === "1") {
-                    alert("what did I do to hurt you?");
-                } else if (userRating.value === "2"){
-                    alert("it's okay, not everyone has taste ¯\_(ツ)_/¯");
-                } else if (userRating.value === "3"){
-                    alert("i'm not mid, you're mid");
-                } else if (userRating.value === "4"){
-                    alert("Not too bad, eh? thank you :)");
-                } else if (userRating.value === "5"){
-                    alert("Fantastic! I'm so glad you liked the cartoon!!! :D");
-                    form.action = "second-animation.html";
-                } else if (userRating.value === ""){
-                    alert("Please give the video a rating...");
-                    event.preventDefault();
-                };
-           });
-        });
-     </script>
+    <script src="scripts.js"></script>
 
     <body>
-        <!-- Navigation Bar -->
+
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" >
             <div class="container-fluid" >
               <div class="collapse navbar-collapse" id="navbarColor01">
@@ -60,6 +38,8 @@
               </div>
             </div>
           </nav>
+
+
         <div class="page-container">
             <div class="content-wrap">
             <!-- margin images  --> 
