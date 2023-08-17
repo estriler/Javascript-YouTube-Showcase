@@ -3,6 +3,8 @@
     src: url("Starborn.otf");
 }
 
+
+
 .header {
     text-align: center;
     color:forestgreen;
@@ -168,7 +170,34 @@ nav ul li {
     text-align: center;
 }
 
+@keyframes wiggly {
+    0%   {left:-6px; top:0px;}
+    5.88%   {left:-6px; top:0px;}
+    11.76%  {left:-5px; top:2px;}
+    17.64%  {left:-3px; top:3px;}
+    23.52%  {left:-1px; top:2px;}
+    29.4% {left:0px; top:0px;}
+    35.28%   {left:1px; top:-2px;}
+    41.16%  {left:3px; top:-3px;}
+    47.04%  {left:5px; top:-2px;}
+    52.92%  {left:6px; top:0px;}
+    58.8% {left:5px; top:2px;}
+    64.68%   {left:3px; top:3px;}
+    70.56%  {left:1px; top:2px;}
+    76.44.%  {left:0px; top:0px;}
+    82.32%  {left:-1px; top:-2px;}
+    88.2% {left:-3px; top:-3px;}
+    94.08%   {left:-5px; top:-2px;}
+    100%   {left:-6px; top:0px;}
+  }
+
 .profile-picture {
-    border-radius: 30px;
+    border-radius: 100px;
+    position: relative;
+    animation-name: wiggly;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
+
+
 
