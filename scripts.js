@@ -77,3 +77,12 @@ function backToTop() {
     });
  });
 
+ let catchphrase = ["welcome! :D", "Hewwo uwu", "Did you know: a honey bee can fly up to 15 miles per hour!"];
+
+ function randomCatchphraseGenerator() {
+    let randomNumber = Math.floor(Math.random() * catchphrase.length);
+    return catchphrase[randomNumber];
+ }
+
+
+
