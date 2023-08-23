@@ -37,7 +37,7 @@ function backToTop() {
              form.action = "https://en.wikipedia.org/wiki/Clown";
          } else if (userRating.value === "3"){
              alert("Yeah, this honestly is just kinda okay. It was senior year and I was working on like 3 other animations at the time so I couldn't crank out masterpieces left and right, ya know? Here's a pic of a cute cat for your honesty:");
-             form.action = "cute-cat.jpg";
+             form.action = "/images/cute-cat.jpg";
          } else if (userRating.value === "4"){
              alert("Thank you! I was going for something similar to the following video:");
              form.action = "https://youtu.be/dNJdJIwCF_Y";
