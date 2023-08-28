@@ -22,8 +22,8 @@ h1 {
 .margin-image {
     position: -webkit-sticky;
     position:sticky;
-    height: 100vh;
-    width: 9px;
+    width: 15%;
+    height: auto;
 }
 
 body {
