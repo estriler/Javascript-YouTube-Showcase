@@ -9,7 +9,7 @@
     text-align: center;
     color:white;
     font-family: "elvicStudiosFont";
-    font-size: 75px;
+    font-size: 105px;
 }
 
 h1 {
@@ -266,14 +266,14 @@ h3{
 }
 
 .home-nav{
-    width: 100%;
+    /* width: 100%; */
     position: absolute;
     top: 0;
-    left: 0;
+    /* left: 0; */
     padding: 20px 8%;
-    display: flex;
+    /* display: flex; */
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .sub-nav{
@@ -315,6 +315,17 @@ nav ul li a{
 .sub-heading {
     font-size: 35px;
     color: black;
+}
+
+.socials-footer {
+    position:absolute;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+    justify-content:center;
+    right: 0;
+    bottom: 0;
 }
 
 
