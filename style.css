@@ -12,11 +12,11 @@
     font-size: 105px;
 }
 
-h1 {
+.star-header {
     text-align: center;
     color:white;
     font-family: "elvicStudiosFont";
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .margin-image {
@@ -296,15 +296,16 @@ h3{
     /* justify-content: space-between; */
     /* background-color: blue; */
     /* align-items: center; */
-    background-color: blue;
+    /* background-color: blue; */
     /* text-align: center; */
-    flex-direction: space-between;
+    justify-content: space-around;
 }
 
 nav ul li{
     list-style: none;
     display: inline block;
     margin-left: 40px;
+    flex-direction: space-between;
 }
 
 nav ul li a{
