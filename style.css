@@ -9,14 +9,14 @@
     text-align: center;
     color:white;
     font-family: "elvicStudiosFont";
-    font-size: 105px;
+    font-size: 6vw;
 }
 
 .star-header {
     text-align: center;
     color:white;
     font-family: "elvicStudiosFont";
-    font-size: 60px;
+    font-size: 5vw;
 }
 
 .margin-image {
@@ -32,7 +32,7 @@ body {
     background-color:rgb(239, 255, 240);
     /* font-family: "Arial" , "Garamond"; */
     /* fixes margin squish */
-    min-width: 1200px;
+    /* min-width: 1200px; */
 }
 
 .rating-form {
@@ -110,6 +110,7 @@ button {
     transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
+    width: 100%;
 }
 
 .thumbnail:hover {
@@ -167,11 +168,6 @@ button {
     opacity:1;
 }
 
-nav ul li {
-    float: left;
-    text-align: center;
-}
-
 @keyframes wiggly {
     0%      {left:-6px; top:0px;}
     5.88%   {left:-6px; top:0px;}
@@ -203,6 +199,14 @@ nav ul li {
     animation-name: wiggly;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-picture-container {
+    width: 100%;
+    height: auto;
+    /* background-color: blue; */
 }
 
 .little-profile-picture {
@@ -252,7 +256,6 @@ nav ul li {
     height: auto;
     background-image: linear-gradient(rgba(0, 138, 30, 0.7),rgba(255, 255, 255, 0.7));
     position: relative;
-    /* display: flex; */
     align-items: center;
     justify-content:center;
 }
@@ -276,14 +279,12 @@ h3{
 }
 
 .home-nav{
-    /* width: 100%; */
     position: absolute;
     top: 0;
-    /* left: 0; */
     padding: 20px 8%;
     /* display: flex; */
-    align-items: center;
-    /* justify-content: space-between; */
+    /* align-items: center; */
+    justify-content: space-around;
 }
 
 .sub-nav{
@@ -304,14 +305,16 @@ h3{
 nav ul li{
     list-style: none;
     display: inline block;
-    margin-left: 40px;
+    margin: 5px 20px;
     flex-direction: space-between;
+    float: left;
+    text-align: center;
 }
 
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .socials {
@@ -324,10 +327,11 @@ nav ul li a{
 .paragraph-container {
     margin: 20px 400px 20px;
     font-size: 25px;
+    font-size: 2vw;
 }
 
 .sub-heading {
-    font-size: 35px;
+    font-size: 4vw;
     color: black;
 }
 
@@ -345,6 +349,8 @@ nav ul li a{
 .active-tab {
     text-decoration: underline;
 }
+
+
 
 
 
