@@ -772,7 +772,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    /* max-width: 1140px; */
   }
 }
 @media (min-width: 1400px) {
@@ -1016,9 +1016,9 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .col-sm {
+  /* .col-sm {
     flex: 1 0 0%;
-  }
+  } */
   .row-cols-sm-auto > * {
     flex: 0 0 auto;
     width: auto;

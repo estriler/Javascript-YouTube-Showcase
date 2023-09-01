@@ -350,6 +350,10 @@ nav ul li a{
     text-decoration: underline;
 }
 
+.animation-card {
+    max-width: 415px;
+}
+
 
 
 
